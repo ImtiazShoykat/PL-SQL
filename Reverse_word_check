@@ -52,8 +52,7 @@ END;
 
 
 
-select backward_forward_check('MADAM') from dual;
-
+select backward_forward_check('MADAM') from dual;  --check and test the query 
 
 
 
