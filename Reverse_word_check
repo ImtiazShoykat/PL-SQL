@@ -34,7 +34,7 @@ END;
 
 
 /* Formatted on 10/24/2023 11:34:02 AM (QP5 v5.388) */
-CREATE OR REPLACE FUNCTION backword_forward_check (p_word IN VARCHAR2)
+CREATE OR REPLACE FUNCTION backward_forward_check (p_word IN VARCHAR2)
     RETURN varchar2
 IS
     v_reverse   VARCHAR2 (100);
@@ -52,13 +52,13 @@ END;
 
 
 
-select backword_forward_check('MADAM') from dual;
+select backward_forward_check('MADAM') from dual;
 
 
 
 
 
-CREATE OR REPLACE FUNCTION backword_forward_check(p_word IN VARCHAR2)
+CREATE OR REPLACE FUNCTION backward_forward_check(p_word IN VARCHAR2)
     RETURN VARCHAR2
 IS
     v_reverse VARCHAR2(100) := '';
